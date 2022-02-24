@@ -3,6 +3,8 @@
 
 # In[1]:
 
+# ** ADJUST SAVE PATH LINE 93 *****
+
 
 from FlightRadar24.api import FlightRadar24API
 fr_api = FlightRadar24API()
@@ -87,6 +89,7 @@ while True:
     now = datetime.now() # current date and time
     date_time = now.strftime("%m-%d-%Y_%H:%M:%S")
     #Save the map to a directory called maps with the current data and time as file name
+    # ** ADJUST PATH *****
     map_.save("/tf/Incongruity/Flight Tracking/Maps/" + date_time + ".html")
     #Move to next color for plotting, so change can be seen between points
     count += 1
