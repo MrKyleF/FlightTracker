@@ -25,6 +25,7 @@ import earthpy.spatial as es
 
 
 #Checks for Flights above an altitude
+#48,000ft and greater is typically only miltary aircraft (few private jets)
 def checkForAltitudeInterest(flights, min_altitude=48000):
     flights_of_interest = []
     #Creates list of flights above min altitude
